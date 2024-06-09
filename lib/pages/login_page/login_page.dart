@@ -111,12 +111,8 @@ class _LoginPageState extends State<LoginPage> {
                       onPressed: () {
                         // Validate and save the form values
                         _formKey.currentState?.saveAndValidate();
-                        debugPrint(_formKey.currentState?.value.toString());
-
                         // On another side, can access all field values without saving form with instantValues
                         _formKey.currentState?.validate();
-                        debugPrint(
-                            _formKey.currentState?.instantValue.toString());
                       },
                       style: ButtonStyle(
                           backgroundColor: WidgetStateProperty.all<Color>(
